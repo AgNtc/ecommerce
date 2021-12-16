@@ -1,11 +1,11 @@
 @media(min-width: 900px) {
     .card_produtos{
-        margin: 30px;
         width: 20rem;
     }
     .card_produtos :hover {
         transform: scale(1.05);
         transition: transform 400ms ease;
+        transform: scaleY(1.10);
     }
 
     .card_categorias{

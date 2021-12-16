@@ -38,7 +38,7 @@ const Cabecalho = () => {
             </li>
           </div>
           <li>
-            <Link to="#" className="menu-item">
+            <Link to="/produtos" className="menu-item">
               Produtos
             </Link>
           </li>

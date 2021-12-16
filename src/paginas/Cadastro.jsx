@@ -2,7 +2,7 @@
     import FormularioCadastro from "../components/Forms/FormularioCadastro";
     import { Container, Typography, Paper } from "@material-ui/core";
     import { validarCPF, validarSenha } from "../models/cadastro";
-    import api from "../config/configApi";
+    // import api from "../config/configApi";
     import ValidacoesCadastro from "../context/ValidacoesCadastro";
     import "../assets/css/cadastro.css"
 
@@ -32,13 +32,14 @@ function Cadastro (){
 //fazer post do cadastro no servidor
     async function enviarForm(dados) {
     console.log(dados);
-    const response = await api.post("/pessoa", {
-    nome: dados.nome,
-    cpf: dados.cpf,
-    datanascimento: dados.datanascimento,
-    caminhoFoto: dados.caminhoFoto,
-    });
-    return response;
-    }
+    // const response = await api.post("/pessoa", {
+    // nome: dados.nome,
+    // cpf: dados.cpf,
+    // datanascimento: dados.datanascimento,
+    // caminhoFoto: dados.caminhoFoto,
+    };
+    // return response;
+    
+    
 
 export default Cadastro
