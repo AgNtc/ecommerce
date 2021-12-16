@@ -1,0 +1,15 @@
+.formCadastro{
+    margin-top: 50px;
+}
+.imagem{
+	align-items: center;
+	justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.titulo_cadastro{
+   padding-top: 50px;
+}
+.btnProximo{
+    padding-top: 50px;
+}
