@@ -16,7 +16,7 @@ const Cabecalho = () => {
           <img className="cabecalho__logo" src={imagem} alt="Logo Doguito" />
           <h1 className="cabecalho__titulo">Jotinha Store</h1>
           <div className="icone_carrinho">
-            <IconButton color="info" aria-label="shopping cart">
+            <IconButton color="inherit" aria-label="shopping cart">
               <ShoppingCartIcon />
             </IconButton>
           </div>

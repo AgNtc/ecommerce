@@ -1,8 +1,6 @@
 .tabela {
     margin-top: 2.25rem;
-
     width: 100%;
-
     background-color: var(--cor-contraste-claro);
     border-radius: 10px;
     box-shadow: var(--sombra);

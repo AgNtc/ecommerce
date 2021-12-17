@@ -1,6 +1,7 @@
 @media(min-width: 900px) {
     .card_produtos{
-        width: 20rem;
+        display: inline-flex;
+        margin: 50px;
     }
     .card_produtos :hover {
         transform: scale(1.05);

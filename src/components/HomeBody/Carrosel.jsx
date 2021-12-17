@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from "react-elastic-carousel/dist";
 import "./styles.css";
 import Cards from "../HomeBody/Cards"
-import { Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -13,8 +13,8 @@ const breakPoints = [
 
 const Carrosel = ()=>{
     return (
-        <>
-          <Typography variant="h3" component="h3" align='center'>Produtos mais Vendidos</Typography>
+      <>
+        <Grid direction="column" justifyContent="center" alignItems="center">
           <div className="App">
             <Carousel breakPoints={breakPoints}>
                 <Cards/>
@@ -22,9 +22,9 @@ const Carrosel = ()=>{
                 <Cards/>
                 <Cards/>
                 <Cards/>
-                <Cards/>
             </Carousel>
           </div>
+        </Grid>
         </>
       );
 }

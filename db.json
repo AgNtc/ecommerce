@@ -1,0 +1,94 @@
+{ 
+    "categorias":[
+        {
+        "categoriaProduto": "Camisa Futebol Internacional",
+        "imagemProduto": "http://placeimg.com/640/480/nature",
+        "id": "Futebol"
+        },
+        {
+        "categoriaProduto": "Camisa Futebol Brasil",
+        "nomeProduto": "Rustic Concrete Car",
+        "descricaoProduto": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "imagemProduto": "http://placeimg.com/640/480/transport",
+        "precoProduto": "102.00",
+        "id": "Basquete"
+        },
+        {
+        "categoriaProduto": "Camisa Futebol Brasil",
+        "nomeProduto": "Sleek Rubber Tuna",
+        "descricaoProduto": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "imagemProduto": "http://placeimg.com/640/480/city",
+        "precoProduto": "782.00",
+        "id": "Internacional"
+        },
+        {
+        "categoriaProduto": "Camisa Futebol Brasil",
+        "nomeProduto": "Small Plastic Mouse",
+        "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "imagemProduto": "http://placeimg.com/640/480/technics",
+        "precoProduto": "794.00",
+        "id": "CortaVento"
+        }
+],
+"produtos":[
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "1"
+    },
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "2"
+    },
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "3"
+    },
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "4"
+    },
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "5"
+     },
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "6"
+     },
+    {
+    "categoriaProduto": "Camisa Futebol Brasil",
+    "nomeProduto": "Small Plastic Mouse",
+    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "794.00",
+    "id": "7"
+     }
+ ],
+"":[
+
+]
+}

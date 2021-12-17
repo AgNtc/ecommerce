@@ -1,6 +1,6 @@
 
 .cabecalho {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-divisao);
     border-radius: 0 0 10px 10px;
     box-shadow: var(--cor-contraste-escuro);
     display: grid;
@@ -51,7 +51,7 @@
     position: fixed;
     left: -100vw;
     top: 0;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-divisao);
     width: 70vw;
     height: 100vh;
     box-sizing: border-box;
@@ -90,12 +90,12 @@
 }
 
 .menu-item--entrar {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-contraste-escuro);
     color: var(--cor-contraste-claro);
     border: none;
 }
 .menu-item--cadastrar {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-contraste-escuro);
     color: var(--cor-contraste-claro);
     border: none;
 }
