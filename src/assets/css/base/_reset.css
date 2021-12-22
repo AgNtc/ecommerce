@@ -43,7 +43,7 @@ table {
 }
 
 a {
-	color: inherit;
+	color: var(--cor-contraste-claro);
 	text-decoration: none;
 }
 
