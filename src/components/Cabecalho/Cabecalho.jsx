@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import imagem from '../../assets/img/logoJotinha.png';
 import '../../assets/css/componentes/cabecalho.css';
-import { IconButton,} from '@material-ui/core';
+import { IconButton, InputBase, Paper,} from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import SearchIcon from '@material-ui/icons/Search';
 
 const Cabecalho = () => {
   return (
@@ -11,18 +12,12 @@ const Cabecalho = () => {
       <div className="menu-hamburger">
         <span className="menu-hamburger__icone"></span>
       </div>
-      <div className="cabecalho-container">
-        <a href="/" className="flex flex--centro">
-          <img className="cabecalho__logo" src={imagem} alt="Logo Doguito" />
-          <h1 className="cabecalho__titulo">Jotinha Store</h1>
+
           <div className="icone_carrinho">
             <IconButton color="inherit" aria-label="shopping cart">
               <ShoppingCartIcon />
             </IconButton>
           </div>
-        </a>
-      </div>
-
       <nav className="menu-cabecalho">
         <ul className="menu-itens">
           <div>
@@ -38,21 +33,44 @@ const Cabecalho = () => {
             </li>
           </div>
           <li>
-            <Link to="/produtos" className="menu-item">
-              Produtos
+            <Link to="/sobre" className="menu-item">
+              Sobre
             </Link>
           </li>
           <li>
             <Link to="/sobre" className="menu-item">
-              Sobre
+              Contato
             </Link>
+          </li>
+          <li>
+          <Paper
+            component="form"
+            sx={{
+              p: "2px 4px",
+              display: "flex",
+              alignItems: "center",
+              width: 400,
+            }}
+            className="input--pesquisa"
+          >
+            <InputBase
+              placeholder="O que voce está procurando"
+              inputProps={{ "aria-label": "O que voce está procurando" }}
+              maxRows="1"
+              className="input--body"
+            />
+            <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
+              <SearchIcon />
+            </IconButton>
+          </Paper>
           </li>
         </ul>
       </nav>
       <div className="menu-cabecalho-background"></div>
     </header>
-  );
+  ); 
 };
+
 
 export default Cabecalho;
 

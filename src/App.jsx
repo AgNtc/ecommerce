@@ -8,6 +8,7 @@ import Cadastro from './paginas/Cadastro';
 import Pagina404 from './paginas/Pagina404';
 import Cabecalho from './components/Cabecalho/Cabecalho';
 import Produtos from './paginas/Produtos'
+
 function App() {
 
   return (
