@@ -1,13 +1,12 @@
 
 .cabecalho {
-    background-image: url('../../img/cabeca1.jpg');
+    background-image: url('../../img/background-nav.svg');
     border-radius: 0 0 10px 10px;
     box-shadow: var(--cor-contraste-escuro);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 4.75rem;
-    background-repeat: repeat;
 }
 
 .menu-hamburguer {
@@ -30,11 +29,10 @@
 }
 
 .cabecalho__logo {
-    width: 10rem;
+    width: 50%;
 }
 
 .cabecalho__titulo {
-    font-family: var(--fonte-familia-logo);
     font-size: 32px;
     margin-left: .5rem;
 }
@@ -86,17 +84,16 @@
     padding-left: 1rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--cor-divisao);
-    font-family: var(--fonte-familia-logo);
 }
 
 .menu-item--entrar {
-    background-color: var(--cor-contraste-escuro);
-    color: var(--cor-contraste-claro);
+    background-color: var(--cor-contraste-claro);
+    color: var(--cor-contraste-escuro);
     border: none;
 }
 .menu-item--cadastrar {
-    background-color: var(--cor-contraste-escuro);
-    color: var(--cor-contraste-claro);
+    background-color: var(--cor-contraste-claro);
+    color: var(--cor-contraste-escuro);
     border: none;
 }
 .menu-item--perfil{
@@ -117,7 +114,9 @@
 @media(min-width: 900px) {
     .cabecalho {
         grid-template-areas: "menu logo .";
-        height:9.45rem;
+        height:6.75rem;
+        width: 100%;
+        padding: 0;
     }
     .cabecalho-container {
         grid-area: logo;
@@ -155,56 +154,55 @@
     }
     .menu-item--cadastrar {
         border-radius: 2rem;
-        padding: .7rem .7rem;
+        padding: .3rem .3rem;
         margin: 5px;
-        width: 65%;
+        width: 90%;
     }
     .menu-item--entrar {
         border-radius: 2rem;
-        padding: .7rem .7rem;
+        padding: .3rem .3rem;
         margin: 5px;
-        width: 55%;
+        width: 80%;
     }
     .input--pesquisa {
-        width: 350px;
+        margin-right: 20%;
+        width: 200%;
+        float: right;
     }
     .input--body {
-        width: 300px;
-        padding-left: 15px;
-    }
-    .icone_carrinho {
-       position: absolute;
-       top: 6.5%;
-       right: 2%;
-       background: var(--cor-contraste-claro);
-       border-radius: 8px;
-    }
-    .nav-perfil{
-        width: 7%;
-        height: 3rem;
-        padding-bottom: .3rem;
-        position: absolute;
-        top: 7%;
-        left: 8%;
-    }
-    .texto-perfil{
-        font-family: var(--fonte-familia-logo);
-        color: var(--cor-contraste-claro);
-        padding: 5px;
-        font-size: 12px;
+        width: 80%;
+        padding-left: 20px;
     }
     .nav1{
         position: absolute;
-        top: 1%;
-        left: 5%;
+        top: 3.5%;
+        left: 11%;
     } 
     .botoes-entra--cadastrar{
         display: inline-flex;
-
     }
-    .menu-itens > .botoes{
-        display: inline-flex;
-        margin-left: 1rem;
 
-    }
 }
+   .menu-itens-nav {
+       display: inline-flex;
+   }
+
+    .icone_carrinho {
+        background: var(--cor-contraste-claro);
+        border-radius: 8px;
+        display: inline-flex;
+        width: 18%;
+        height: 100%;
+    }
+    .nav-perfil {
+        height: 30%;
+        padding-bottom: .3rem;
+        display: inline-flex;
+        margin-left: 60%;
+    }
+    .texto-perfil {
+        color: var(--cor-contraste-claro);
+        padding: 5%;
+        font-size: 12px;
+        width: 40%;
+    }

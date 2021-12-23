@@ -1,94 +1,180 @@
 { 
     "categorias":[
         {
-        "categoriaProduto": "Camisa Futebol Internacional",
         "imagemProduto": "http://placeimg.com/640/480/sport",
-        "id": "Futebol"
+        "nome": "Brasileirão",
+        "id": "Camisa-Futebol-Nacional"
         },
         {
-        "categoriaProduto": "Camisa Futebol Brasil",
-        "nomeProduto": "Rustic Concrete Car",
-        "descricaoProduto": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "nome": "Basquete",
         "imagemProduto": "http://placeimg.com/640/480/transport",
-        "precoProduto": "102.00",
-        "id": "Basquete"
+        "id": "Camisa-Basquete"
         },
         {
-        "categoriaProduto": "Camisa Futebol Brasil",
-        "nomeProduto": "Sleek Rubber Tuna",
-        "descricaoProduto": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "nome": "Internacionais",
         "imagemProduto": "http://placeimg.com/640/480/city",
-        "precoProduto": "782.00",
-        "id": "Internacional"
+        "id": "Camisa-Futebol-Internacional",
+        "subcategorias": ["Liga-Alema","Liga-Inglesa","Liga-Italiana","Liga-Espanhola","Liga-Francesa","Liga-Portuguesa", "Liga-Holandesa"]
         },
         {
-        "categoriaProduto": "Camisa Futebol Brasil",
-        "nomeProduto": "Small Plastic Mouse",
-        "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "nome": "Corta-Vento",
         "imagemProduto": "http://placeimg.com/640/480/technics",
-        "precoProduto": "794.00",
-        "id": "CortaVento"
+        "id": "Blusa-Corta-Vento",
+        "subcategorias": ["Brasil", "Internacional"]
         }
 ],
 "produtos":[
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Nacional",
+    "nomeProduto": "Camisa do Corinthians",
+    "descricaoProduto": "Camisa do corinthians tamanho g/m/p cor branca uniforme 3",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
+    "precoProduto": "200,00",
     "id": "1"
     },
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Nacional",
+    "nomeProduto": "Camisa do Palmeiras",
+    "descricaoProduto": "Camisa do palmeiras tamanho g/m/p cor branca uniforme 3",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
+    "precoProduto": "200,00",
     "id": "2"
     },
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Internacional",
+    "nomeProduto": "Camisa do Manchester city",
+    "descricaoProduto": "Camisa do manchester city tamanho g/m/p cor branca uniforme 3",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
-    "id": "3"
+    "precoProduto": "200,00",
+    "id": "3",
+    "subcategoria": "Liga-Inglesa"
     },
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Internacional",
+    "nomeProduto": "Camisa do Bayer Munchen",
+    "descricaoProduto": "Camisa do bayer tamanho g/m/p cor branca uniforme 3",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
-    "id": "4"
+    "precoProduto": "200,00",
+    "id": "4",
+    "subcategoria": "Liga-Alema"
     },
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Internacional",
+    "nomeProduto": "Camisa do Napole",
+    "descricaoProduto": "Camisa do Napole tamanho g/m/p cor branca uniforme 3",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
-    "id": "5"
-     },
+    "precoProduto": "200,00",
+    "id": "5",
+    "subcategoria":"Liga-Italiana"
+    },
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Internacional",
+    "nomeProduto": "Camisa do Real Madrid",
+    "descricaoProduto": "Camisa do real madrid tamanho g/m/p cor branca uniforme 3",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
-    "id": "6"
-     },
+    "precoProduto": "200,00",
+    "id": "6",
+    "subcategoria":"Liga-Espanhola"
+    },
     {
-    "categoriaProduto": "Camisa Futebol Brasil",
-    "nomeProduto": "Small Plastic Mouse",
-    "descricaoProduto": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "categoriaProduto": "Camisa-Futebol-Internacional",
+    "nomeProduto": "Camisa do PSG",
+    "descricaoProduto": "Camisa do Paris Saint German tamanho g/m/p classic",
     "imagemProduto": "http://placeimg.com/640/480/technics",
-    "precoProduto": "794.00",
+    "precoProduto": "200,00",
     "id": "7"
+    },
+    {
+    "categoriaProduto": "CamisaBasquete",
+    "nomeProduto": "Camisa Lakers",
+    "descricaoProduto": "Camisa Lakers tamanho xl/x/g amarela",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "200",
+    "id": "8"
+    },
+    {
+    "categoriaProduto": "Blusa-Corta-Vento",
+    "nomeProduto": "Corta Vento Corinthians",
+    "descricaoProduto": "Blusa Corta vento tamanho g/m/p preta",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "350",
+    "id": "9",
+    "subcategoria":"Brasil"
+    },
+    {
+    "categoriaProduto": "Blusa-CortaVento",
+    "nomeProduto": "Corta Vento Palmeiras",
+    "descricaoProduto": "Blusa Corta vento tamanho g/m/p verde",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "350",
+    "id": "10",
+    "subcategoria":"Brasil"
+    },
+    {
+    "categoriaProduto": "Blusa-Corta-Vento",
+    "nomeProduto": "Corta Vento Liverpool",
+    "descricaoProduto": "Blusa Corta vento tamanho g/m/p tradicional",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "400",
+    "id": "11",
+    "subcategoria": "Internacional"
+     },
+    {
+    "categoriaProduto": "Blusa-Corta-Vento",
+    "nomeProduto": "Corta vento PSG",
+    "descricaoProduto": "Blusa Corta vento tamanho g/m/p Jordan",
+    "imagemProduto": "http://placeimg.com/640/480/technics",
+    "precoProduto": "400",
+    "id": "12",
+    "subcategoria": "Internacional"
      }
  ],
-"":[
-
-]
+ "destaques":[
+    {
+        "imagemProduto": "http://placeimg.com/640/480/sport",
+        "idCategoria": "Blusa-Corta-Vento",
+        "nomeProduto": "Corta Vento Liverpool",
+        "precoProduto": "400",
+        "id": "11"
+        
+    },
+    {
+        "imagemProduto": "http://placeimg.com/640/480/transport",
+        "idCategoria": "Brasileirão",
+        "precoProduto": "200",
+        "nomeProduto": "Camisa do Corinthians",
+        "id": "1"
+    },
+    {
+        "imagemProduto": "http://placeimg.com/640/480/city",
+        "idCategoria": "Internacionais",
+        "nomeProduto": "Camisa do PSG",
+        "subcategorias": "Liga-Francesa",
+        "precoProduto": "200",
+        "id": "7"
+    },
+    {
+        "imagemProduto": "http://placeimg.com/640/480/technics",
+        "idCategoria": "Internacionais",
+        "nomeProduto": "Camisa do Real Madrid",
+        "subcategorias": "Liga-Espanhola",
+        "precoProduto": "200",
+        "id": "6"
+    },
+    {
+        "imagemProduto": "http://placeimg.com/640/480/technics",
+        "idCategoria": "Brasileirão",
+        "nomeProduto": "Camisa do Palmeiras",
+        "precoProduto": "200",
+        "id": "2"
+    },
+    {
+        "imagemProduto": "http://placeimg.com/640/480/technics",
+        "idCategoria": "Basquete",
+        "nomeProduto": "Camisa dos Lakers",
+        "subcategorias": "Liga-Espanhola",
+        "precoProduto": "200",
+        "id": "8"
+    }
+ ]
 }
