@@ -1,12 +1,13 @@
 
 .cabecalho {
-    background-image: url("../../img/cabecalho.svg");
+    background-image: url('../../img/cabeca1.jpg');
     border-radius: 0 0 10px 10px;
     box-shadow: var(--cor-contraste-escuro);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 4.75rem;
+    background-repeat: repeat;
 }
 
 .menu-hamburguer {
@@ -78,6 +79,7 @@
     transform: translate(-50%, -50%);
 }
 
+
 .menu-item {
     display: block;
     padding-top: 1.5rem;
@@ -85,7 +87,6 @@
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--cor-divisao);
     font-family: var(--fonte-familia-logo);
-    font-size: 20px;
 }
 
 .menu-item--entrar {
@@ -112,12 +113,12 @@
 }
 
 
+
 @media(min-width: 900px) {
     .cabecalho {
         grid-template-areas: "menu logo .";
         height:9.45rem;
     }
-
     .cabecalho-container {
         grid-area: logo;
     }
@@ -150,69 +151,60 @@
     .menu-item {
         border: none;
         padding: 0;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
-
     .menu-item--cadastrar {
         border-radius: 2rem;
-        padding: .3rem .3rem;
+        padding: .7rem .7rem;
+        margin: 5px;
+        width: 65%;
     }
     .menu-item--entrar {
         border-radius: 2rem;
-        padding: .3rem .3rem;
-        position: absolute;
-        right: 100%;
+        padding: .7rem .7rem;
+        margin: 5px;
+        width: 55%;
     }
     .input--pesquisa {
-        position: absolute;
-        right: 22%;
-        top: 5%;
-        width: 280px;
-        padding-left: 10px;
+        width: 350px;
     }
-
     .input--body {
-        width: 220px;
+        width: 300px;
+        padding-left: 15px;
     }
-
     .icone_carrinho {
        position: absolute;
-       top: 1%;
-       right: 1%;
-       background: var(--cor-contraste-escuro);
+       top: 6.5%;
+       right: 2%;
+       background: var(--cor-contraste-claro);
        border-radius: 8px;
     }
-    .nav1 {
+    .nav-perfil{
+        width: 7%;
+        height: 3rem;
+        padding-bottom: .3rem;
+        position: absolute;
+        top: 7%;
+        left: 8%;
+    }
+    .texto-perfil{
+        font-family: var(--fonte-familia-logo);
+        color: var(--cor-contraste-claro);
+        padding: 5px;
+        font-size: 12px;
+    }
+    .nav1{
         position: absolute;
         top: 1%;
-        left: 85%;
+        left: 5%;
+    } 
+    .botoes-entra--cadastrar{
+        display: inline-flex;
+
     }
-    .nav-perfil{
-        font-family: var(--fonte-familia-logo);
-        font-size: 12px;
-        color: var(--cor-contraste-claro);
-        border: solid 5px;
-        border-radius: 9px;
-        border-color: var(--cor-contraste-escuro);
-        font-size: 18px;
-        background-color:var(--cor-contraste-escuro);
-        
+    .menu-itens > .botoes{
+        display: inline-flex;
+        margin-left: 1rem;
+
     }
-
 }
-
-/* .input--pesquisa{
-    position: absolute;
-    right: 20%;
-    top: 3%;
-    width: 280px;
-    padding-left: 10px;
-}
-.input--body {
-    width: 220px;
-}
-
-.icone_carrinho{
-    position: absolute;
-    right: 9%;
-} */

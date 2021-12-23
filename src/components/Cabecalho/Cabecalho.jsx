@@ -23,67 +23,65 @@ const Cabecalho = () => {
       <div className="cabecalho-container">
         <a href="/" className="flex flex--centro">
           <img className="cabecalho__logo" src={logo} alt="Logo Doguito" />
-          <div className="icone_carrinho">
-            <IconButton color="inherit" aria-label="shopping cart">
-              <ShoppingCartIcon />
-            </IconButton>
-          </div>
         </a>
       </div>
-      <nav className="menu-cabecalho">
-        <ul className="menu-itens">
-          <li>
-            <Paper
-              component="form"
-              sx={{
-                p: "2px 4px",
-                display: "flex",
-                alignItems: "center",
-                width: 400,
-              }}
-              className="input--pesquisa"
-            >
-              <InputBase
-                placeholder="O que voce está procurando"
-                inputProps={{ "aria-label": "O que voce está procurando" }}
-                maxRows="1"
-                className="input--body"
-              />
-              <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
-                <SearchIcon />
-              </IconButton>
-            </Paper>
-          </li>
-          <li>
-            <Link to="#" className="menu-item">
-              Categorias
-            </Link>
-          </li>
-          <li>
-            <Link to="/cadastro" className="menu-item">
-              Cadastrar
-            </Link>
-          </li>
-          <li>
-            <Link to="/cadastro" className="menu-item">
-              Cadastrar
-            </Link>
-          </li>
-          <li>
-            <Link to="/cadastro" className="menu-item">
-              Cadastrar
-            </Link>
-          </li>
-          <li>
-            <Link to="/cadastro" className="menu-item">
-              Cadastrar
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="icone_carrinho">
+        <IconButton color="primary" aria-label="shopping cart">
+          <ShoppingCartIcon />
+        </IconButton>
+      </div>
+      <div>
+        <nav className="menu-cabecalho">
+          <ul className="menu-itens">
+            <li>
+              <div className="input--pesquisa">
+                <Paper
+                  component="form"
+                  sx={{
+                    p: "2px 4px",
+                    display: "flex",
+                    alignItems: "center",
+                    width: 400,
+                  }}
+                >
+                  <InputBase
+                    placeholder="O que voce está procurando"
+                    inputProps={{ "aria-label": "O que voce está procurando" }}
+                    maxRows="1"
+                    className="input--body"
+                  />
+                  <IconButton
+                    type="submit"
+                    sx={{ p: "10px" }}
+                    aria-label="search"
+                  >
+                    <SearchIcon />
+                  </IconButton>
+                </Paper>
+              </div>
+            </li>
+          <div className="botoes">
+            <li>
+              <Button>
+                <Link to="#" className="menu-item">
+                  Categorias
+                </Link>
+              </Button>
+            </li>
+            <li>
+              <Button>
+                <Link to="#" className="menu-item">
+                  Promoções
+                </Link>
+              </Button>
+            </li>
+          </div>
+          </ul>
+        </nav>
+      </div>
       <nav className="nav1">
         <ul className="menu-itens">
-          <div>
+          <div className="botoes-entra--cadastrar">
             <li>
               <Link to="#" className="menu-item menu-item--entrar">
                 Entrar
@@ -97,35 +95,35 @@ const Cabecalho = () => {
           </div>
         </ul>
         <br />
-        <nav>
-          <div>
-            <Button
-              id="fade-button"
-              aria-controls="fade-menu"
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              <Avatar /><span className="nav-perfil">Minha Conta</span>
-            </Button>
-            <Menu
-              id="fade-menu"
-              MenuListProps={{
-                "aria-labelledby": "fade-button",
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              TransitionComponent={Fade}
-            >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
-            </Menu>
-          </div>
-        </nav>
       </nav>
-      <div className="menu-cabecalho-background"></div>
+      <nav className="nav-perfil">
+            <div>
+              <Button
+                id="fade-button"
+                aria-controls="fade-menu"
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+              >
+                <Avatar />
+                <span className="texto-perfil">Minha Conta</span>
+              </Button>
+              <Menu
+                id="fade-menu"
+                MenuListProps={{
+                  "aria-labelledby": "fade-button",
+                }}
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                TransitionComponent={Fade}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
+            </div>
+          </nav>
     </header>
   ); 
 };

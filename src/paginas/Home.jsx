@@ -10,13 +10,14 @@ const Home = () => {
     <>
       <div>
         <Typography variant="h4" component="h5" align="center">
+          Destaques
         </Typography>
         {/* <ListaCategorias />
          <Categorias url={"/produtos"} /> */}
       </div>
-      {/* <div>
+      <div>
         <Carrosel />
-      </div> */}
+      </div>
     </>
   );
 }
