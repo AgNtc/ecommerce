@@ -7,7 +7,6 @@ body {
 	background-repeat: no-repeat;
 	color: var(--cor-contraste-escuro);
 	font-family: var(--fonte-familia-corpo);
-	overflow: hidden;
 }
 
 .container { 
@@ -31,12 +30,11 @@ body {
 .titulo-pagina {
 	display: flex;
 	align-items: center;
-	font-family: var(--fonte-familia-titulo-pagina);
 	font-size: var(--fonte-tamanho-titulo-pagina);
 	background-color: var(--cor-contraste-claro);
     border-radius: 10px;
 	box-shadow: var(--sombra);
-	height: 4.75rem;
+	height: 2.75rem;
 	margin-top: 1.25rem;
 	margin-bottom: 2rem;
 	padding-left: 2rem;
@@ -46,6 +44,7 @@ body {
   .container {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;	
+		justify-content: center;
 	}
 }
 

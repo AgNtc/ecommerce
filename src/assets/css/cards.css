@@ -13,3 +13,8 @@
         display: inline-flex;
     }
 }
+.card_produtos_carrosel{
+    display: inline-flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

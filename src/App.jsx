@@ -8,6 +8,7 @@ import Cadastro from './paginas/Cadastro';
 import Pagina404 from './paginas/Pagina404';
 import Cabecalho from './components/Cabecalho/Cabecalho';
 import Produtos from './paginas/Produtos'
+import ListaCategorias from './paginas/ListaCategorias';
 
 function App() {
 
@@ -21,10 +22,13 @@ function App() {
       <Route path='/sobre'>
         <Sobre/>
       </Route>
+      <Route path='/categorias/:id'>
+        <ListaCategorias />
+      </Route>
       <Route path='/Cadastro'>
         <Cadastro/>
       </Route>
-      <Route path='/Produtos/:id'>
+      <Route path='/produtos/:id'>
         <Produtos />
       </Route>
       <Route>

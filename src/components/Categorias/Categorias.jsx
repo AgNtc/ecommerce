@@ -4,35 +4,38 @@ import { Link } from 'react-router-dom';
 import { busca } from '../../config/configApi';
 import "../../assets/css/cards.css";
 
-// import imagem from'../../assets/img/nicolas-cage-gq.jpg';
 
-
-const Categorias =({url}) => {
-     const [produtos, setProdutos] = useState([]);
+const Categorias =() => {
+     const [categorias, setProdutos] = useState([]);
     useEffect(()=>{
-        busca(url, setProdutos)
-    }, [url]);
+        busca(`/categorias`, setProdutos)
+    }, []);
 
     return (
-      <Grid container justify = "center">
+      <Grid container justify="center">
         <div className="card_produtos">
-          {produtos.map((produtos) => (
-            <Link key={produtos.idcategoria} to={`/idcategoria/${produtos.id}`}>
+          {categorias.map((categoria) => (
+            <Link to={`/categorias/${categoria.id}`}>
               <Card variant="outlined">
                 <CardMedia
                   component="img"
                   alt="green iguana"
                   height="250"
-                  src={`${produtos.imagemProduto}`}
+                  src={`${categoria.imagemProduto}`}
                 />
-                <Typography gutterBottom variant="h5" component="div">
-                  {produtos.nome}
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  className={`lista-categorias__categoria lista-categorias__categoria--${categoria.id}`}
+                >
+                  {categoria.nome}
                 </Typography>
               </Card>
             </Link>
           ))}
         </div>
-    </Grid>
-      );
+      </Grid>
+    );
 }
 export default Categorias;

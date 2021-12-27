@@ -10,7 +10,8 @@ const Produtos= () =>{
     const [produtos, setProdutos] = useState({});
 
     useEffect(()=>{
-        busca(`/idcategoria/${id}`, setProdutos).catch(()=>{
+        busca(`/produtos/${id}`, setProdutos)
+        .catch(()=>{
           history.push('/404')
         })
     }, [id])

@@ -1,8 +1,7 @@
-import { Button, Card, CardActions, CardContent, CardMedia } from "@material-ui/core";
+import { Card, CardContent, CardMedia } from "@material-ui/core";
 import { Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import imagem from "../../assets/img/app-para-acompanhar-resultados-de-futebol.jpg";
 import "../../assets/css/cards.css";
 import { busca } from "../../config/configApi";
 
@@ -15,16 +14,31 @@ const Cards = () =>{
 
     return (
       <div className="card_produtos_carrosel">
-        <Card variant="outlined">
-          <CardMedia component="img" alt="produto" image={imagem} />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Categoria 1
-            </Typography>
-          </CardContent>
-        </Card>
+        {destaques.map((destaques) =>(
+        <Link key={destaques.id} to={`/produtos/${destaques.id}`}>
+          <Card variant="outlined">
+            <CardMedia
+              component="img"
+              alt="produto"
+              src={`${destaques.imagemProduto}`}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {destaques.nomeProduto}
+              </Typography>
+              <Typography gutterBottom variant="h6" component="div">
+                {destaques.precoProduto}
+              </Typography>
+              <Typography gutterBottom variant="h6" component="div">
+                {destaques.idCategoria}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+        ))}
       </div>
     );
 }
 
 export default Cards;
+  

@@ -1,27 +1,32 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
-import Cards from '../components/HomeBody/Cards';
 import Carrosel from '../components/HomeBody/Carrosel';
 import Categorias from '../components/Categorias/Categorias';
-import ListaCategorias from '../components/Categorias/ListaCategorias';
+import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
 
 const Home = () => {
   return (
-    <>
+    <main>
       <div>
         <Typography variant="h4" component="h5" align="center">
           Destaques
         </Typography>
-        <Carrosel />
+        <br />
+        <Carrosel url={"/destaques"} />
       </div>
       <div>
         <Typography variant="h4" component="h5" align="center">
           Categorias
         </Typography>
-        <ListaCategorias />
         <Categorias url={"/categorias"} />
       </div>
-    </>
+      {/* <div>
+        <Typography variant="h4" component="h5" align="center">
+          Produtos
+        </Typography>
+        <ListaProdutos url={"/produtos"} />
+      </div> */}
+    </main>
   );
 }
 
