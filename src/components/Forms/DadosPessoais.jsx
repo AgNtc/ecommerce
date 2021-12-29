@@ -1,6 +1,6 @@
 import { React, useState, useContext } from "react";
 import {TextField, Button} from "@material-ui/core";
-import ValidacoesCadastro from "../../context/ValidacoesCadastro";
+import ValidacoesCadastro from "../../common/context/ValidacoesCadastro";
 import useErros from "../../hooks/useErros";
 import "../../assets/css/cadastro.css";
 

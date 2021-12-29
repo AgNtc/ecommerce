@@ -15,7 +15,7 @@ const Categorias =() => {
       <Grid container justify="center">
         <div className="card_produtos">
           {categorias.map((categoria) => (
-            <Link to={`/categorias/${categoria.id}`}>
+            <Link to={`/categorias/${categoria.id}`} key={categoria.id}>
               <Card variant="outlined">
                 <CardMedia
                   component="img"
