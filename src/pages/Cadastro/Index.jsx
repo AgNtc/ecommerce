@@ -1,10 +1,10 @@
-    import React from "react";
-    import FormularioCadastro from "../components/Forms/FormularioCadastro";
-    import { Container, Typography, Paper } from "@material-ui/core";
-    import { validarCPF, validarSenha } from "../models/cadastro";
-    // import api from "../config/configApi";
-    import ValidacoesCadastro from "../common/context/ValidacoesCadastro";
-    import "../assets/css/cadastro.css"
+import React from "react";
+import FormularioCadastro from "../../components/Forms/FormularioCadastro";
+import { Container, Typography, Paper } from "@material-ui/core";
+import { validarCPF, validarSenha } from "../../models/cadastro";
+// import api from "../config/configApi";
+import ValidacoesCadastro from "../../common/context/ValidacoesCadastro";
+import "../../assets/css/cadastro.css"
 
 function Cadastro (){
     return (

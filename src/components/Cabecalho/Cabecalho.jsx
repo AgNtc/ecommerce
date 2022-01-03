@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../../assets/css/componentes/cabecalho.css';
-import { Avatar, Button, Fade, IconButton, InputBase, Menu, MenuItem, Paper, Typography } from '@material-ui/core';
+import { Avatar, Badge, Button, Fade, IconButton, InputBase, Menu, MenuItem, Paper, Typography } from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
 import logo from "../../assets/img/logo1-removebg-preview.png";
 
 const Cabecalho = () => {
+    // const { quantidadeCarrinho } = useCarrinhoContext();
+    const history = useHistory();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -44,11 +46,7 @@ const Cabecalho = () => {
             </li>
             <div className="cabecalho-container">
               <a href="/" className="flex flex--centro">
-                <img
-                  className="cabecalho__logo"
-                  src={logo}
-                  alt="Logo Doguito"
-                />
+                <img className="cabecalho__logo" src={logo} alt='logo'/>
               </a>
             </div>
             <div className="menu-itens-nav">
@@ -85,35 +83,39 @@ const Cabecalho = () => {
         <br />
       </nav>
       <nav className="nav-perfil">
-          <Button
-            id="fade-button"
-            aria-controls="fade-menu"
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            onClick={handleClick}
+        <Button
+          id="fade-button"
+          aria-controls="fade-menu"
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+          onClick={handleClick}
+        >
+          <Avatar />
+          <span className="texto-perfil">Minha Conta</span>
+        </Button>
+        <Menu
+          id="fade-menu"
+          MenuListProps={{
+            "aria-labelledby": "fade-button",
+          }}
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={Fade}
+        >
+          <MenuItem onClick={handleClose}>Profile</MenuItem>
+          <MenuItem onClick={handleClose}>My account</MenuItem>
+          <MenuItem onClick={handleClose}>Logout</MenuItem>
+        </Menu>
+        <div className="icone_carrinho">
+          <IconButton
+            onClick={() => history.push("/carrinho")}
           >
-            <Avatar />
-            <span className="texto-perfil">Minha Conta</span>
-          </Button>
-          <Menu
-            id="fade-menu"
-            MenuListProps={{
-              "aria-labelledby": "fade-button",
-            }}
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            TransitionComponent={Fade}
-          >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-          </Menu>
-            <div className="icone_carrinho">
-              <IconButton color="primary" aria-label="shopping cart">
-                <ShoppingCartIcon />
-              </IconButton>
-            </div>
+            <Badge  color="primary">
+              <ShoppingCartIcon />
+            </Badge>
+          </IconButton>
+        </div>
       </nav>
     </header>
   ); 

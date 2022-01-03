@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
-import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+import ListaProdutos from '../../components/ListaProdutos/ListaProdutos';
 
 const SubCategoria = () =>{
     const { subcategoria }= useParams();

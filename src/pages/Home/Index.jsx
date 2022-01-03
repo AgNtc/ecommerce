@@ -1,8 +1,8 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
-import Carrosel from '../components/HomeBody/Carrosel';
-import Categorias from '../components/Categorias/Categorias';
-import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+import Carrosel from '../../components/HomeBody/Carrosel';
+import Categorias from '../../components/Categorias/Categorias';
+import ListaProdutos from '../../components/ListaProdutos/ListaProdutos';
 
 const Home = () => {
   return (
@@ -20,12 +20,12 @@ const Home = () => {
         </Typography>
         <Categorias url={"/categorias"} />
       </div>
-      {/* <div>
+      <div>
         <Typography variant="h4" component="h5" align="center">
           Produtos
         </Typography>
         <ListaProdutos url={"/produtos"} />
-      </div> */}
+      </div>
     </main>
   );
 }

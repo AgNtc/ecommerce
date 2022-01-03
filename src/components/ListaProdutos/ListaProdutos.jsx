@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
+import { Button, Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { busca } from "../../config/configApi";
@@ -21,7 +21,7 @@ const ListaProdutos = ({ url }) => {
             <Card variant="outlined">
               <CardMedia
                 component="img"
-                alt="green iguana"
+                alt={`${produto.nomeProduto}`}
                 height="250"
                 src={`${produto.imagemProduto}`}
               />
@@ -38,6 +38,12 @@ const ListaProdutos = ({ url }) => {
                 <Typography gutterBottom variant="h6" component="div">
                   {produto.descricaoProduto}
                 </Typography>
+                <Button color="primary" variant="contained">
+                  Comprar
+                </Button>
+                <Button color="primary" variant="contained">
+                  Adicionar ao Carrinho
+                </Button>
               </CardContent>
             </Card>
           </article>

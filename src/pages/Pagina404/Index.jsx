@@ -1,6 +1,6 @@
 import React from 'react';
-import imagem from '../assets/img/page404.png';
-import '../assets/css/404.css';
+import imagem from '../../assets/img/page404.png';
+import '../../assets/css/404.css';
 const Pagina404 = ()=>{
     return (
         <main className="container flex flex--centro flex--coluna">

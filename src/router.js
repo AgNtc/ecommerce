@@ -3,41 +3,41 @@ import {
 } from 'react';
 import './assets/css/base/base.css';
 import {
-    BrowserRouter,
-    Route,
+    BrowserRouter, Route,
     Switch
-} from 'react-router-dom/cjs/react-router-dom.min';
+} from 'react-router-dom'
 
-import Home from './pages/Home';
-import Sobre from './pages/Sobre';
-import Cadastro from './pages/Cadastro';
-import Pagina404 from './pages/Pagina404';
+import Home from './pages/Home/Index';
+import Sobre from './pages/Sobre/Index';
+import Cadastro from './pages/Cadastro/Index';
+import Pagina404 from './pages/Pagina404/Index';
 import Cabecalho from './components/Cabecalho/Cabecalho';
-import Produtos from './pages/Produtos'
-import ListaCategorias from './pages/ListaCategorias';
-import { UsuarioContex } from './common/context/usuario';
+import Produtos from './pages/Produtos/Index';
+import ListaCategorias from './pages/ListaCategoria/Index';
+import { CategoriaProvider } from './common/context/categorias';
+import { CarrinhoProvider } from './common/context/pagamento';
 
 function Routes() {
-const 
 return ( 
 <BrowserRouter>
     <Cabecalho/>
         <Switch >
             <Route exact path = '/' >
-                <UsuarioContex.Provider value={{}}/>
                 <Home/>
             </Route>
             <Route path = '/sobre' >
-            <   Sobre/>
+                < Sobre/>
             </Route> 
-            <Route path = '/categorias/:id' >
-                <ListaCategorias/>
-            </Route>
+            <CategoriaProvider>
+                <Route path = '/categorias/:id' >
+                    <ListaCategorias/>
+                </Route>
+                <Route path = '/produtos/:id' >
+                    <Produtos />
+                </Route>
+            </CategoriaProvider>
             <Route path = '/Cadastro' >
                 <Cadastro/>
-            </Route>
-            <Route path = '/produtos/:id' >
-                <Produtos/>
             </Route>
             <Route >
                 <Pagina404/>
